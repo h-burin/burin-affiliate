@@ -20,8 +20,34 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "Burin | Bio Links",
-  description: "รวมลิงก์ทุกช่องทางของ Burin",
+  title: {
+    default: "อาเฮียฮ้อ | Burin Samphanwetsopha",
+    template: "%s | อาเฮียฮ้อ",
+  },
+  description:
+    "รวมลิงก์ทุกช่องทางของ อาเฮียฮ้อ - Burin Samphanwetsopha | Shopping, อสังหาริมทรัพย์, Facebook, Instagram, YouTube, TikTok, Lemon8",
+  keywords: [
+    "อาเฮียฮ้อ",
+    "Burin",
+    "Burin Samphanwetsopha",
+    "rhiahor",
+    "Shopee",
+    "อสังหาริมทรัพย์",
+    "bio link",
+  ],
+  authors: [{ name: "Burin Samphanwetsopha" }],
+  openGraph: {
+    title: "อาเฮียฮ้อ | Burin Samphanwetsopha",
+    description:
+      "รวมลิงก์ทุกช่องทางของ อาเฮียฮ้อ - Shopping, อสังหาริมทรัพย์ และโซเชียลมีเดีย",
+    type: "website",
+    locale: "th_TH",
+    siteName: "อาเฮียฮ้อ",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="th">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} antialiased`}
       >
