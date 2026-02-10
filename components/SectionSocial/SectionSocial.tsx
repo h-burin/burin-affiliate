@@ -83,7 +83,7 @@ const socialGroups = [
 
 export default function SectionSocial() {
   return (
-    <div className="container mx-auto relative z-10 w-full h-screen flex flex-col items-center justify-center">
+    <div className="container mx-auto relative z-10 w-full py-10 px-8 flex flex-col items-center justify-center">
       <div className="section-social">
         {socialGroups.map((group) => (
           <div key={group.title} className="social-group">
