@@ -1,0 +1,21 @@
+.box-link-social {
+  display: flex;
+  padding: 1rem 4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 50px;
+  background-color: #fff;
+  border: #d4d4d4 solid 1px;
+
+  span {
+    color: #000 !important;
+  }
+}
+.bg-color-facebook {
+  color: #1877f2;
+}
+.section-social {
+  max-width: 100%;
+  width: 500px;
+}

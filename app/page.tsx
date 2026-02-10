@@ -1,3 +1,5 @@
+import "./home.scss";
+import { FaFacebook } from "react-icons/fa";
 import DotGrid from "@/components/ReactBits/DotGrid/DotGrid";
 
 export default function Home() {
@@ -16,10 +18,14 @@ export default function Home() {
           returnDuration={1.5}
         />
       </div>
-      <div className="container mx-auto px-4 relative z-10 w-full h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-center my-8">
-          Burin Samphanwetsopha
-        </h1>
+      <div className="container mx-auto relative z-10 w-full h-screen flex flex-col items-center justify-center">
+        <div className="section-social w-full">
+          <a href="https://www.facebook.com/Burinsampanwatsopa" target="_blank">
+            <div className="box-link-social bg-color-facebook">
+              <FaFacebook /> <span>Facebook</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
