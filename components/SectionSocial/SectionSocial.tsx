@@ -2,6 +2,7 @@ import "./SectionSocial.scss";
 import { FaFacebook, FaInstagram, FaLine, FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { SiShopee } from "react-icons/si";
+import { MdApartment } from "react-icons/md";
 import { TbLemon2Filled } from "react-icons/tb";
 import SocialLink from "./SocialLink";
 
@@ -21,6 +22,18 @@ const socialGroups = [
         icon: SiShopee,
         label: "Shopee Video",
         colorClass: "bg-color-shopee",
+      },
+    ],
+  },
+  {
+    title: "อสังหาริมทรัพย์",
+    description: "โครงการบ้านและคอนโดที่น่าสนใจ",
+    links: [
+      {
+        href: "/property",
+        icon: MdApartment,
+        label: "ดูโครงการทั้งหมด",
+        colorClass: "bg-color-property",
       },
     ],
   },
