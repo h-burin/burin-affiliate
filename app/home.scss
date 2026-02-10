@@ -1,15 +1,18 @@
 .box-link-social {
   display: flex;
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
+  padding-left: 2rem;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
+  justify-content: space-between;
   border-radius: 50px;
   background-color: #fff;
-  border: #d4d4d4 solid 1px;
+  border: #f7f7f7 solid 1px;
 
   span {
     color: #000 !important;
+  }
+  svg{
+    font-size: 2.4rem;
   }
 }
 .bg-color-facebook {
@@ -17,5 +20,20 @@
 }
 .section-social {
   max-width: 100%;
-  width: 500px;
+  width: 350px;
+}
+
+.icon-go-to-link {
+  width: 40px;
+  height: 40px;
+  background-color: #F0F2F6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    color: #000;
+    font-size: 2rem;    
+  }
 }
