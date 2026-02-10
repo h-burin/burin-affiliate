@@ -62,6 +62,10 @@
   span {
     color: #000 !important;
     transition: color 0.3s ease;
+
+    @media screen and (max-width: 578px) {
+      font-size: 1.4rem;
+    }
   }
   svg {
     font-size: 2.4rem;
@@ -72,30 +76,63 @@
   color: #1877f2;
 }
 .bg-color-instagram {
-  color: #E1306C;
+  color: #e1306c;
 
   &::before {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important;
+    background: linear-gradient(
+      45deg,
+      #f09433,
+      #e6683c,
+      #dc2743,
+      #cc2366,
+      #bc1888
+    ) !important;
   }
 }
 .bg-color-line {
-  color: #06C755;
+  color: #06c755;
+}
+.bg-color-youtube {
+  color: #ff0000;
 }
 .bg-color-shopee {
-  color: #EE4D2D;
+  color: #ee4d2d;
 }
 .section-social {
   max-width: 100%;
-  width: 350px;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 4rem;
+}
+
+.social-group-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.social-group-title {
+  font-weight: 600;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.social-group-desc {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding-left: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .icon-go-to-link {
   width: 40px;
   height: 40px;
-  background-color: #F0F2F6;
+  background-color: #f0f2f6;
   border-radius: 50%;
   display: flex;
   align-items: center;
