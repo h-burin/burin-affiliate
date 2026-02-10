@@ -1,6 +1,8 @@
 import "./SectionSocial.scss";
 import { FaFacebook, FaInstagram, FaLine, FaYoutube } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 import { SiShopee } from "react-icons/si";
+import { TbLemon2Filled } from "react-icons/tb";
 import SocialLink from "./SocialLink";
 
 const socialGroups = [
@@ -49,6 +51,18 @@ const socialGroups = [
         icon: FaYoutube,
         label: "YouTube: อาเฮียฮ้อ (ช่องจริง)",
         colorClass: "bg-color-youtube",
+      },
+      {
+        href: "https://www.tiktok.com/@rhiahor",
+        icon: FaTiktok,
+        label: "TikTok: @rhiahor",
+        colorClass: "bg-color-tiktok",
+      },
+      {
+        href: "https://s.lemon8-app.com/s/GgbdZeThSU",
+        icon: TbLemon2Filled,
+        label: "Lemon8: @rhiahor",
+        colorClass: "bg-color-lemon8",
       },
     ],
   },
