@@ -17,12 +17,12 @@ const socialGroups = [
         label: "หน้าร้าน Shopee",
         colorClass: "bg-color-shopee",
       },
-      {
-        href: "https://th.shp.ee/04q8rj1?smtt=0.0.9",
-        icon: SiShopee,
-        label: "Shopee Video",
-        colorClass: "bg-color-shopee",
-      },
+      // {
+      //   href: "https://th.shp.ee/04q8rj1?smtt=0.0.9",
+      //   icon: SiShopee,
+      //   label: "Shopee Video",
+      //   colorClass: "bg-color-shopee",
+      // },
     ],
   },
   {
@@ -83,7 +83,7 @@ const socialGroups = [
 
 export default function SectionSocial() {
   return (
-    <div className="container mx-auto relative z-10 w-full py-10 px-8 flex flex-col items-center justify-center">
+    <div className="container mx-auto relative z-10 w-full py-10 px-8 flex flex-col items-center justify-center h-screen">
       <div className="section-social">
         {socialGroups.map((group) => (
           <div key={group.title} className="social-group">
