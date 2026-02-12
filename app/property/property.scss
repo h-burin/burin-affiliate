@@ -3,17 +3,29 @@
   align-items: center;
   gap: 0.6rem;
   font-size: 1.4rem;
+  font-weight: 500;
   color: #666;
   text-decoration: none;
   margin-bottom: 3rem;
-  transition: color 0.2s ease;
+  padding: 0.6rem 1.4rem 0.6rem 1rem;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  transition: all 0.2s ease;
 
   svg {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    transition: transform 0.2s ease;
   }
 
   &:hover {
     color: #2563eb;
+    border-color: #2563eb;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+
+    svg {
+      transform: translateX(-3px);
+    }
   }
 }
 
@@ -123,7 +135,7 @@
 
 .property-page__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;

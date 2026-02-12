@@ -26,5 +26,19 @@
     "maxPrice": "10.00",
     "registerUrl": "https://siri.ly/Pwq2wR2",
     "mapUrl": "https://maps.app.goo.gl/GcuAppkKzZqYvVtu6"
+  },
+  {
+    "id": "project-003",
+    "name": "เดอะ ไลน์ ไวบ์",
+    "location": "ถ.พหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพมหานคร",
+    "bedrooms": "1-2",
+    "bathrooms": "1-2",
+    "floors": 33,
+    "projectType": "condominium",
+    "coverImage": "/images/properties/sansiri-condominium-theline-vibe.webp",
+    "startingPrice": "4.29",
+    "maxPrice": "",
+    "registerUrl": "https://siri.ly/IJq6vA2",
+    "mapUrl": "https://maps.app.goo.gl/FPtApdzGmmR3jX2z7"
   }
 ]
