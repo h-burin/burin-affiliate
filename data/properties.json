@@ -1,0 +1,28 @@
+[
+  {
+    "id": "project-001",
+    "name": "เซลฟ์ บาย แสนสิริ",
+    "location": "ถนนพระราม 4 แขวงคลองตัน เขตคลองเตย กรุงเทพมหานคร",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floors": 37,
+    "projectType": "condominium",
+    "coverImage": "/images/properties/sansiri-condominium-xelf-by-sansiri.webp",
+    "startingPrice": "3.59 ล้าน",
+    "registerUrl": "https://siri.ly/ATGo3Q2",
+    "mapUrl": "https://maps.app.goo.gl/RqBGXjW1542cm9Ln9"
+  },
+  {
+    "id": "project-002",
+    "name": "อณาสิริ ปิ่นเกล้า - กาญจนาฯ",
+    "location": "ถ.บางม่วง-บางคูลัด ต.บางใหญ่ อ.บางใหญ่ อ.บางกรวย จ.นนทบุรี",
+    "bedrooms": "3-4",
+    "bathrooms": "",
+    "floors": 2,
+    "projectType": "house",
+    "coverImage": "/images/properties/sansiri-singlehouse-anasiri-pinklao-kanchana.webp",
+    "startingPrice": "4.99 ล้าน",
+    "registerUrl": "https://siri.ly/Pwq2wR2",
+    "mapUrl": "https://maps.app.goo.gl/GcuAppkKzZqYvVtu6"
+  }
+]

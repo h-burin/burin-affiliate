@@ -1,0 +1,222 @@
+.property-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 2rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  aspect-ratio: 3 / 4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
+    .property-card__img {
+      transform: scale(1.05);
+    }
+
+    .property-card__blur {
+      backdrop-filter: blur(16px);
+    }
+  }
+}
+
+// Full-bleed cover image
+.property-card__img {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+// Badge on top-right
+.property-card__badge {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  z-index: 3;
+
+  &--condominium {
+    background-color: rgba(37, 99, 235, 0.85);
+  }
+
+  &--house {
+    background-color: rgba(16, 185, 129, 0.85);
+  }
+
+  &--townhouse {
+    background-color: rgba(245, 158, 11, 0.85);
+  }
+
+  &--villa {
+    background-color: rgba(139, 92, 246, 0.85);
+  }
+}
+
+// Smooth blur layer with gradient mask
+.property-card__blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  -webkit-mask-image: linear-gradient(to top, black 0%, black 30%, transparent 100%);
+  mask-image: linear-gradient(to top, black 0%, black 30%, transparent 100%);
+  pointer-events: none;
+  transition: backdrop-filter 0.3s ease;
+}
+
+// Gradient overlay at bottom
+.property-card__overlay {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.35) 50%,
+    transparent 100%
+  );
+  padding: 3rem 2rem 2rem;
+}
+
+// Info section
+.property-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.property-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.property-card__name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.property-card__price {
+  flex-shrink: 0;
+  padding: 0.3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.property-card__location {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+
+  svg {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.9);
+    flex-shrink: 0;
+  }
+}
+
+.property-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.property-card__detail {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+
+  svg {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+}
+
+// Action buttons
+.property-card__actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.property-card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+
+  svg {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &--register {
+    flex: 1;
+    background: linear-gradient(135deg, #fff 0%, #e8edf5 100%);
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+
+    svg {
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, #fff 0%, #d4ddf0 100%);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--map {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    backdrop-filter: blur(4px);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+}
