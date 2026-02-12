@@ -14,6 +14,7 @@ export interface PropertyData {
   projectType: "condominium" | "house" | "townhouse" | "villa";
   coverImage: string;
   startingPrice?: string;
+  maxPrice?: string;
   registerUrl?: string;
   mapUrl?: string;
 }
@@ -58,7 +59,8 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             <h3 className="property-card__name">{property.name}</h3>
             {property.startingPrice && (
               <span className="property-card__price">
-                เริ่ม {property.startingPrice}
+                {property.startingPrice}
+                {property.maxPrice && ` - ${property.maxPrice}`} ล้าน
               </span>
             )}
           </div>
