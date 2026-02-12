@@ -42,15 +42,15 @@ const socialGroups = [
     description: "ติดตามและพูดคุยกับ อาเฮียฮ้อ ได้ทุกช่องทาง",
     links: [
       {
-        href: "https://www.facebook.com/Burinsampanwatsopa",
+        href: "https://www.facebook.com/rdoublehofficial",
         icon: FaFacebook,
-        label: "Facebook: Burin Sampanwatsopa",
+        label: "Facebook: อาเฮียฮ้อ",
         colorClass: "bg-color-facebook",
       },
       {
-        href: "https://www.instagram.com/burin.41/",
+        href: "https://www.instagram.com/rhiahor.official?igsh=Yzl5ZHgxaGQxaGtw&utm_source=qr",
         icon: FaInstagram,
-        label: "Instagram: birin.41",
+        label: "Instagram: rhiahor.official",
         colorClass: "bg-color-instagram",
       },
       {
