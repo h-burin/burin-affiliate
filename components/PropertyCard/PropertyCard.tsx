@@ -1,4 +1,7 @@
+"use client";
+
 import "./PropertyCard.scss";
+import { useState } from "react";
 import Image from "next/image";
 import { MdLocationOn, MdKingBed, MdBathtub, MdMap } from "react-icons/md";
 import { TbStairs } from "react-icons/tb";
@@ -31,15 +34,21 @@ const projectTypeLabels: Record<PropertyData["projectType"], string> = {
 };
 
 export default function PropertyCard({ property }: PropertyCardProps) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <div className="property-card">
+      {/* Skeleton */}
+      {!imageLoaded && <div className="property-card__skeleton" />}
+
       {/* Full-bleed image */}
       <Image
         src={property.coverImage}
         alt={property.name}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className="property-card__img"
+        className={`property-card__img ${imageLoaded ? "property-card__img--loaded" : ""}`}
+        onLoad={() => setImageLoaded(true)}
       />
 
       {/* Badge */}

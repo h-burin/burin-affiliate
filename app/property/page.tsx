@@ -1,9 +1,9 @@
 import "./property.scss";
-import PropertyCard from "@/components/PropertyCard";
 import type { PropertyData } from "@/components/PropertyCard/PropertyCard";
 import properties from "@/data/properties.json";
 import { MdArrowBack } from "react-icons/md";
 import Link from "next/link";
+import PropertyPageClient from "./PropertyPageClient";
 
 export const metadata = {
   title: "อสังหาริมทรัพย์",
@@ -25,11 +25,7 @@ export default function PropertyPage() {
         </p>
       </div>
 
-      <div className="property-page__grid">
-        {(properties as PropertyData[]).map((property) => (
-          <PropertyCard key={property.id} property={property} />
-        ))}
-      </div>
+      <PropertyPageClient properties={properties as PropertyData[]} />
     </div>
   );
 }
