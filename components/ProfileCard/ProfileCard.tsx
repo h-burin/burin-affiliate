@@ -1,8 +1,11 @@
+"use client";
+
 import "./ProfileCard.scss";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 import socialGroups from "@/data/social-links.json";
 import properties from "@/data/properties.json";
+import DecryptedText from "@/components/ReactBits/DecryptedText/DecryptedText";
 
 function getAge() {
   const birthday = new Date(1998, 1, 12); // 12 ก.พ. 2541 (พ.ศ.)
@@ -51,7 +54,15 @@ export default function ProfileCard() {
 
       {/* Info */}
       <div className="profile-card__body">
-        <h1 className="profile-card__name">อาเฮียฮ้อ (ช่องจริง)</h1>
+        <h1 className="profile-card__name">
+          <DecryptedText
+            text="อาเฮียฮ้อ (ช่องจริง)"
+            animateOn="view"
+            revealDirection="start"
+            sequential
+            speed={50}
+          />
+        </h1>
         <p className="profile-card__bio">
           รีวิวสินค้า | อสังหาริมทรัพย์ | ไลฟ์สไตล์
         </p>
