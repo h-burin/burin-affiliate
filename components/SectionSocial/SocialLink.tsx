@@ -15,7 +15,7 @@ export default function SocialLink({
   colorClass,
 }: SocialLinkProps) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} {...(href.startsWith("/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}>
       <div className={`box-link-social ${colorClass} shadow-md`}>
         <div className="flex items-center justify-center gap-5">
           <Icon /> <span>{label}</span>
