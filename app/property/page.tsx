@@ -19,9 +19,9 @@ export default function PropertyPage() {
       </Link>
 
       <div className="property-page__header">
-        <h1 className="property-page__title">อสังหาริมทรัพย์</h1>
+        <h1 className="property-page__title">แนะนำโครงการ</h1>
         <p className="property-page__subtitle">
-          โครงการบ้านและคอนโดที่น่าสนใจ
+          เลือกโครงการบ้านที่ใช่ ตอบโจทย์ทุกไลฟ์สไตล์ของคุณ
         </p>
       </div>
 
